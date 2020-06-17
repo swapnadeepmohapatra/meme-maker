@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Meme Maker</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="src/styles.css" />
+	</head>
+	<body>
+		<div class="container container-fluid">
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroup-sizing-default">Top Line</span>
+				</div>
+				<input
+					id="topLineText"
+					type="text"
+					class="form-control"
+					aria-label="Sizing example input"
+					aria-describedby="inputGroup-sizing-default"
+				/>
+			</div>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroup-sizing-default">Bottom Line</span>
+				</div>
+				<input
+					id="bottomLineText"
+					type="text"
+					class="form-control"
+					aria-label="Sizing example input"
+					aria-describedby="inputGroup-sizing-default"
+				/>
+			</div>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+				</div>
+				<div class="custom-file">
+					<input type="file" class="custom-file-input" id="file" aria-describedby="inputGroupFileAddon01" />
+					<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+				</div>
+			</div>
+			<canvas id="canvas" width="500" height="300"></canvas>
+			<div>
+				<button type="button" id="saveBtn" class="btn btn-success btn-lg btn-block">
+					Download Meme
+				</button>
+			</div>
+		</div>
+		<script src="src/app.js"></script>
+	</body>
+</html>
